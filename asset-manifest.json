@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/INFO6150-final-project/static/css/main.ac00f421.css",
+    "main.js": "/INFO6150-final-project/static/js/main.10ec0477.js",
+    "static/js/787.bd02f72e.chunk.js": "/INFO6150-final-project/static/js/787.bd02f72e.chunk.js",
+    "static/media/valorant_logo.png": "/INFO6150-final-project/static/media/valorant_logo.a5767ec2627eeab435ce.png",
+    "index.html": "/INFO6150-final-project/index.html",
+    "main.ac00f421.css.map": "/INFO6150-final-project/static/css/main.ac00f421.css.map",
+    "main.10ec0477.js.map": "/INFO6150-final-project/static/js/main.10ec0477.js.map",
+    "787.bd02f72e.chunk.js.map": "/INFO6150-final-project/static/js/787.bd02f72e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac00f421.css",
+    "static/js/main.10ec0477.js"
+  ]
+}
