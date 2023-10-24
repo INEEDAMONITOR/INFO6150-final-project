@@ -1,0 +1,31 @@
+.gears-root {
+    display: flex;
+    flex-direction: column;
+}
+
+.gears-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bd3944;
+
+    padding: 2rem;
+    margin: 1rem;
+
+    border-radius: 1.5rem;
+}
+
+@media screen and (min-width: 44rem) {
+    .gears-root {
+        display: grid;
+        grid-template-columns: repeat(12, auto);
+        grid-template-rows: repeat(12, auto);
+        grid-gap: 5rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .gears-item {
+        grid-column: span 6;
+        grid-row: 4/10;
+    }
+}

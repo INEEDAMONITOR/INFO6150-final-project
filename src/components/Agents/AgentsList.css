@@ -1,0 +1,42 @@
+.agent-card-root {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+}
+.agent-card {
+    grid-column: span 4;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+
+    background-color: #fffbf5;
+    border-radius: 2rem;
+
+    padding: 1rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.agent-card__image {
+    width: 100%;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+
+@media screen and (min-width: 90rem) {
+    .agent-card {
+        grid-column: span 3;
+    }
+    .agent-card-root {
+        grid-gap: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+@media screen and (min-width: 100rem) {
+    .agent-card {
+        grid-column: span 1;
+    }
+}

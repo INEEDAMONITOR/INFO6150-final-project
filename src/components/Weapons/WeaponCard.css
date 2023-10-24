@@ -1,0 +1,53 @@
+.weapon-card-root {
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+}
+.weapon-card {
+    grid-column: span 12;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: none;
+
+    background-color: #fffbf5;
+
+    padding: 2rem;
+}
+.weapon-card * {
+    margin: 0.25rem;
+}
+.weapon-card__basic-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.weapon-card__image {
+    width: 100%;
+}
+
+.card__weapon-name {
+    background-color: #bd3944;
+    width: fit-content;
+    padding: 0.5rem 0.75rem;
+    border-radius: 1rem;
+    color: #fffbf5;
+}
+.weapon-demage-ranges-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+.weapon-demage-ranges__wrapper {
+    width: 100%;
+}
+@media screen and (min-width: 44rem) {
+    .weapon-card {
+        grid-column: span 4;
+        margin: 0.5rem;
+    }
+}

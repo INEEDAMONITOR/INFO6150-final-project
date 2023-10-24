@@ -1,0 +1,13 @@
+.wdr-table .wdr-column {
+    border: 2px solid #fd4556;
+    margin: 0;
+}
+.wdr-table h4 {
+    margin: 0;
+}
+.wdr-column + .wdr-column {
+    border-top: 0;
+}
+.wdr-table {
+    width: 100%;
+}

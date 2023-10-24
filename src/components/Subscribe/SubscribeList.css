@@ -1,0 +1,88 @@
+.form-root {
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    grid-template-rows: repeat(12, auto);
+}
+.form-card {
+    border-radius: 0.5rem;
+    background-color: #fffbf5;
+
+    padding: 0.5rem;
+
+    grid-row: 5/ 9;
+    grid-column: span 12;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+
+    justify-content: space-between;
+
+    height: 100%;
+    width: 100%;
+}
+.form-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-left .form-left-checkbox {
+    display: block;
+    flex-direction: row;
+    width: 100%;
+}
+
+.submit__bottom {
+    padding: 0.5rem;
+    align-self: center;
+    background-color: #bd3944;
+
+    width: 50%;
+    height: 2rem;
+
+    border: 0px;
+    border-radius: 0.25rem;
+    color: #fffbf5;
+}
+.error-message {
+    font: 0.75 sans-serif;
+    color: #bd3944;
+}
+
+@media screen and (min-width: 44rem) {
+    .form-left {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .form-left label {
+        grid-column: 1/5;
+    }
+    .form-left input,
+    select {
+        grid-column: 5/13;
+        width: 100%;
+        height: fit-content;
+    }
+    .form-left select {
+        text-align: center;
+    }
+    .form-left select {
+        width: 100%;
+    }
+    .form-card {
+        border-radius: 0.5rem;
+        background-color: #fffbf5;
+
+        padding: 0.5rem;
+
+        grid-row: 5/ 9;
+        grid-column: 6/8;
+    }
+}

@@ -1,0 +1,55 @@
+.agent-info-card-root {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.full-size-img {
+    width: 100%;
+}
+.description-card {
+    grid-column: span 12;
+}
+.description-card .role-icon {
+    width: 5rem;
+    height: 5rem;
+}
+.ability-card {
+    grid-column: span 6;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+
+    background-color: #fffbf5;
+
+    padding: 1rem;
+}
+.ability-card img {
+    width: 60%;
+    height: auto;
+    background-color: #fd4556;
+}
+@media screen and (min-width: 44rem) {
+    .card {
+        grid-column: span 3;
+    }
+
+    .agent-display-pane {
+        display: grid;
+        grid-template-areas: 'portrait info';
+        grid-template-rows: auto 1fr;
+    }
+    .full-size-img {
+        grid-area: protrait;
+        height: auto;
+        width: 100%;
+    }
+    .agent-info-card-root {
+        grid-area: info;
+    }
+    .ability-card img {
+        width: 7rem;
+        height: auto;
+        background-color: #fd4556;
+    }
+}
